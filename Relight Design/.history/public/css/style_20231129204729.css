@@ -1,0 +1,103 @@
+@import url('https://fonts.cdnfonts.com/css/switzer');
+
+body {
+    position: relative;
+    font-family: 'Switzer', sans-serif;
+    font-style: normal;
+    height: 100vh;
+}
+
+.faqs {
+    position: absolute;
+    inset: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h2.title {
+    display: inline-block;
+    margin: 0;
+    font-weight: bold;
+    background: linear-gradient(to right, #722FFF 0%, #B12EFF 91.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+}
+
+.accordion {
+    width: 80%;
+    padding: 20px 0;
+}
+
+.accordion-item {
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #2E2E2E;
+}
+
+.accordion-item:first-of-type {
+    border-radius: 5px;
+}
+
+.accordion-item:last-of-type {
+    border-radius: 5px;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: start;
+    width: 100%;
+    padding: 20px;
+}
+
+.accordion-btn .content {
+    color: #FFFFFF;
+}
+
+.content .top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: .6rem;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.content .icon.plus {
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+}
+
+.content .accordion-collapse {
+    color: #C3C3C3;
+    font-weight: normal;
+    font-size: .6rem;
+    margin-top: 10px;
+}
